@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 0;
+}
+
+.sidebar {
+  margin: 0;
+  background: #333;
+  min-height: 100vh;
+  width: 50px;
+  transition: width 0.5s ease-out;
+  overflow: hidden; /* Ẩn nội dung vượt quá chiều rộng */
+}
+
+.sidebar:hover {
+  width: 180px;
+}
+
+.sidebar-content {
+  width: 90%;
+  padding: 10px 0;
+}
+
+
+.list {
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Chiếm toàn bộ chiều rộng của sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.list-item-inside {
+  display: flex;
+  padding: 10px 0;
+  color: #cccccc;
+  cursor: pointer;
+  overflow: hidden; /* Giữ phần nội dung nằm trong ô khi nó hẹp */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.list-item-inside:hover {
+  background: #444;
+  transform: translateX(10px);
+}
+
+.sidebar-top:hover {
+  background: #444;
+}
+
+.span-item-inside {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Khi hover vào sidebar, các span-item-inside sẽ hiện ra */
+.sidebar:hover .span-item-inside {
+  display: block;
+  width: 70%;
+}
+
+.sidebar-top {
+  margin: 0;
+  color: #cccccc;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+
+/*--------------------------css product-----------------------*/
+

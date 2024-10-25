@@ -1,0 +1,17 @@
+.custom-link {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.custom-link:hover {
+  color: #333333; /* Màu sắc khi hover */
+  text-decoration: underline;
+}
+
+.pagination {
+  text-align: end;
+  margin: 10px;
+  padding: 10px;
+}
