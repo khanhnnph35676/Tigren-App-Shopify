@@ -3,7 +3,7 @@
 client_id = "ea78f01671dec8556f8d5e019404dd74"
 name = "Tigren"
 handle = "tigren-1"
-application_url = "https://dealt-pregnancy-polyester-academic.trycloudflare.com"
+application_url = "https://andrews-karl-plane-bluetooth.trycloudflare.com"
 embedded = true
 
 [build]
@@ -34,7 +34,13 @@ redirect_urls = [
   "https://step-artistic-successfully-tales.trycloudflare.com/api/auth/callback",
   "https://dealt-pregnancy-polyester-academic.trycloudflare.com/auth/callback",
   "https://dealt-pregnancy-polyester-academic.trycloudflare.com/auth/shopify/callback",
-  "https://dealt-pregnancy-polyester-academic.trycloudflare.com/api/auth/callback"
+  "https://dealt-pregnancy-polyester-academic.trycloudflare.com/api/auth/callback",
+  "https://weak-employers-fleece-courses.trycloudflare.com/auth/callback",
+  "https://weak-employers-fleece-courses.trycloudflare.com/auth/shopify/callback",
+  "https://weak-employers-fleece-courses.trycloudflare.com/api/auth/callback",
+  "https://andrews-karl-plane-bluetooth.trycloudflare.com/auth/callback",
+  "https://andrews-karl-plane-bluetooth.trycloudflare.com/auth/shopify/callback",
+  "https://andrews-karl-plane-bluetooth.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

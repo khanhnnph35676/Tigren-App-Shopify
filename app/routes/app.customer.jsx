@@ -1,16 +1,12 @@
 import {
-  Page, LegacyCard, DataTable, Text, LegacyStack, Icon, Button
+  Page, LegacyCard, DataTable, Text, LegacyStack, Button, Toast
 } from '@shopify/polaris';
-import {
-  ViewIcon
-} from "@shopify/polaris-icons";
 import React, {useState} from 'react';
-import {useLoaderData} from "@remix-run/react";
+import {useLoaderData, Link} from "@remix-run/react";
 import {json} from "@remix-run/node";
 import {authenticate} from "../shopify.server";
-import '../components/css/customer.css'
+import '../components/css/customer.css';
 import CustomSidebar from "../components/customSidebar.jsx";
-import {Link} from "@remix-run/react";
 
 export const loader = async ({request}) => {
   const {admin} = await authenticate.admin(request);
@@ -36,6 +32,9 @@ export const loader = async ({request}) => {
               currencyCode
             }
             email
+            metafield(namespace: "custom", key: "point") {
+              value
+            }
           }
         }
       }
@@ -65,17 +64,21 @@ export default function CustomerTable() {
     }
   };
 
+  const extractShopifyId = (shopifyId) => {
+    return shopifyId.split("/").pop();
+  };
+
   const displayedRows = customers.slice(currentPage * rowsPerPage, (currentPage + 1) * rowsPerPage).map(customer => {
-    const amountSpentInVND = parseFloat(customer.amountSpent.amount); // Chuyển đổi giá trị sang số
-    const points = amountSpentInVND ? Math.floor(amountSpentInVND / 10) : 0; // Tính điểm
+    const pointsValue = customer.metafield?.value || '0'; // Cập nhật cách lấy giá trị điểm
 
     return [
-      <Link to={`/customers/${customer.id}`} className="custom-link">{customer.email}</Link>,
+      <Link to={`/app/customer_detail/${extractShopifyId(customer.id)}`}
+            className="custom-link">{customer.email}</Link>,
       customer.phone || 'N/A',
       customer.addresses.length > 0 ? customer.addresses[0].address1 : 'N/A',
       `${customer.orders.nodes.length} orders`,
       customer.amountSpent ? `${customer.amountSpent.amount} đ` : 'N/A',
-      `${points} point`
+      pointsValue + ' point'
     ];
   });
 
@@ -91,6 +94,7 @@ export default function CustomerTable() {
               <Text variant="heading3xl" as="h2"> List Customer </Text>
             </LegacyStack>
           </div>
+
           <LegacyCard>
             <DataTable
               columnContentTypes={[

@@ -15,3 +15,8 @@
   margin: 10px;
   padding: 10px;
 }
+
+.show-order {
+  max-height: 400px;
+  overflow: auto;
+}
