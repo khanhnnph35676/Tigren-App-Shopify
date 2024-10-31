@@ -1,0 +1,18 @@
+
+
+Metafield not found for customer 7043638198323
+
+Order 5315365601331 paid for customer 7043638198323. Calculated reward points: 81.
+
+Metafield not found for customer 7043638198323
+
+Metafield not found for customer 7043638198323
+
+Metafield not found for customer 7043638198323
+
+Metafield not found for customer 7043638198323
+
+Customer 7043638198323: 12 + 81 = 93 points
+
+Customer 7043638198323: 93 + 73 = 166 points
+

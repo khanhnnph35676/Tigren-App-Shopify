@@ -77,7 +77,7 @@ export default function CustomerTable() {
       customer.phone || 'N/A',
       customer.addresses.length > 0 ? customer.addresses[0].address1 : 'N/A',
       `${customer.orders.nodes.length} orders`,
-      customer.amountSpent ? `${customer.amountSpent.amount} đ` : 'N/A',
+      customer.amountSpent ? `${parseInt(customer.amountSpent.amount)} đ` : 'N/A',
       pointsValue + ' point'
     ];
   });

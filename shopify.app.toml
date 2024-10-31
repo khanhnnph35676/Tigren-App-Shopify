@@ -3,7 +3,7 @@
 client_id = "ea78f01671dec8556f8d5e019404dd74"
 name = "Tigren"
 handle = "tigren-1"
-application_url = "https://andrews-karl-plane-bluetooth.trycloudflare.com"
+application_url = "https://graphic-bruce-further-remove.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,7 +13,7 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_customers,read_orders,write_customers,write_orders"
+scopes = "read_customers,read_orders,read_product_feeds,read_product_listings,read_products,write_customers,write_orders,write_product_feeds,write_product_listings,write_products"
 
 [auth]
 redirect_urls = [
@@ -40,7 +40,88 @@ redirect_urls = [
   "https://weak-employers-fleece-courses.trycloudflare.com/api/auth/callback",
   "https://andrews-karl-plane-bluetooth.trycloudflare.com/auth/callback",
   "https://andrews-karl-plane-bluetooth.trycloudflare.com/auth/shopify/callback",
-  "https://andrews-karl-plane-bluetooth.trycloudflare.com/api/auth/callback"
+  "https://andrews-karl-plane-bluetooth.trycloudflare.com/api/auth/callback",
+  "https://rarely-epson-urw-tournament.trycloudflare.com/auth/callback",
+  "https://rarely-epson-urw-tournament.trycloudflare.com/auth/shopify/callback",
+  "https://rarely-epson-urw-tournament.trycloudflare.com/api/auth/callback",
+  "https://limited-grams-proceedings-terry.trycloudflare.com/auth/callback",
+  "https://limited-grams-proceedings-terry.trycloudflare.com/auth/shopify/callback",
+  "https://limited-grams-proceedings-terry.trycloudflare.com/api/auth/callback",
+  "https://officially-bibliography-romantic-cat.trycloudflare.com/auth/callback",
+  "https://officially-bibliography-romantic-cat.trycloudflare.com/auth/shopify/callback",
+  "https://officially-bibliography-romantic-cat.trycloudflare.com/api/auth/callback",
+  "https://columnists-assign-mount-studio.trycloudflare.com/auth/callback",
+  "https://columnists-assign-mount-studio.trycloudflare.com/auth/shopify/callback",
+  "https://columnists-assign-mount-studio.trycloudflare.com/api/auth/callback",
+  "https://ambassador-bathrooms-vi-definition.trycloudflare.com/auth/callback",
+  "https://ambassador-bathrooms-vi-definition.trycloudflare.com/auth/shopify/callback",
+  "https://ambassador-bathrooms-vi-definition.trycloudflare.com/api/auth/callback",
+  "https://netscape-hottest-le-receives.trycloudflare.com/auth/callback",
+  "https://netscape-hottest-le-receives.trycloudflare.com/auth/shopify/callback",
+  "https://netscape-hottest-le-receives.trycloudflare.com/api/auth/callback",
+  "https://theorem-chapel-subsection-exemption.trycloudflare.com/auth/callback",
+  "https://theorem-chapel-subsection-exemption.trycloudflare.com/auth/shopify/callback",
+  "https://theorem-chapel-subsection-exemption.trycloudflare.com/api/auth/callback",
+  "https://positive-yeah-meant-thereby.trycloudflare.com/auth/callback",
+  "https://positive-yeah-meant-thereby.trycloudflare.com/auth/shopify/callback",
+  "https://positive-yeah-meant-thereby.trycloudflare.com/api/auth/callback",
+  "https://nodes-install-tonight-gmc.trycloudflare.com/auth/callback",
+  "https://nodes-install-tonight-gmc.trycloudflare.com/auth/shopify/callback",
+  "https://nodes-install-tonight-gmc.trycloudflare.com/api/auth/callback",
+  "https://doug-empty-gerald-auction.trycloudflare.com/auth/callback",
+  "https://doug-empty-gerald-auction.trycloudflare.com/auth/shopify/callback",
+  "https://doug-empty-gerald-auction.trycloudflare.com/api/auth/callback",
+  "https://menus-sticker-profits-edward.trycloudflare.com/auth/callback",
+  "https://menus-sticker-profits-edward.trycloudflare.com/auth/shopify/callback",
+  "https://menus-sticker-profits-edward.trycloudflare.com/api/auth/callback",
+  "https://link-training-petition-ministries.trycloudflare.com/auth/callback",
+  "https://link-training-petition-ministries.trycloudflare.com/auth/shopify/callback",
+  "https://link-training-petition-ministries.trycloudflare.com/api/auth/callback",
+  "https://investigations-informal-corporations-guilty.trycloudflare.com/auth/callback",
+  "https://investigations-informal-corporations-guilty.trycloudflare.com/auth/shopify/callback",
+  "https://investigations-informal-corporations-guilty.trycloudflare.com/api/auth/callback",
+  "https://running-bikes-skirt-palmer.trycloudflare.com/auth/callback",
+  "https://running-bikes-skirt-palmer.trycloudflare.com/auth/shopify/callback",
+  "https://running-bikes-skirt-palmer.trycloudflare.com/api/auth/callback",
+  "https://allows-public-languages-something.trycloudflare.com/auth/callback",
+  "https://allows-public-languages-something.trycloudflare.com/auth/shopify/callback",
+  "https://allows-public-languages-something.trycloudflare.com/api/auth/callback",
+  "https://youth-locking-oakland-controls.trycloudflare.com/auth/callback",
+  "https://youth-locking-oakland-controls.trycloudflare.com/auth/shopify/callback",
+  "https://youth-locking-oakland-controls.trycloudflare.com/api/auth/callback",
+  "https://little-poison-latter-analysis.trycloudflare.com/auth/callback",
+  "https://little-poison-latter-analysis.trycloudflare.com/auth/shopify/callback",
+  "https://little-poison-latter-analysis.trycloudflare.com/api/auth/callback",
+  "https://manufacture-ireland-latvia-correctly.trycloudflare.com/auth/callback",
+  "https://manufacture-ireland-latvia-correctly.trycloudflare.com/auth/shopify/callback",
+  "https://manufacture-ireland-latvia-correctly.trycloudflare.com/api/auth/callback",
+  "https://screens-incurred-h-logistics.trycloudflare.com/auth/callback",
+  "https://screens-incurred-h-logistics.trycloudflare.com/auth/shopify/callback",
+  "https://screens-incurred-h-logistics.trycloudflare.com/api/auth/callback",
+  "https://environment-urgent-manufacturers-oz.trycloudflare.com/auth/callback",
+  "https://environment-urgent-manufacturers-oz.trycloudflare.com/auth/shopify/callback",
+  "https://environment-urgent-manufacturers-oz.trycloudflare.com/api/auth/callback",
+  "https://periodically-fabrics-aka-retailer.trycloudflare.com/auth/callback",
+  "https://periodically-fabrics-aka-retailer.trycloudflare.com/auth/shopify/callback",
+  "https://periodically-fabrics-aka-retailer.trycloudflare.com/api/auth/callback",
+  "https://jj-dust-workplace-episode.trycloudflare.com/auth/callback",
+  "https://jj-dust-workplace-episode.trycloudflare.com/auth/shopify/callback",
+  "https://jj-dust-workplace-episode.trycloudflare.com/api/auth/callback",
+  "https://never-georgia-subsidiaries-des.trycloudflare.com/auth/callback",
+  "https://never-georgia-subsidiaries-des.trycloudflare.com/auth/shopify/callback",
+  "https://never-georgia-subsidiaries-des.trycloudflare.com/api/auth/callback",
+  "https://coupon-frankfurt-ohio-racks.trycloudflare.com/auth/callback",
+  "https://coupon-frankfurt-ohio-racks.trycloudflare.com/auth/shopify/callback",
+  "https://coupon-frankfurt-ohio-racks.trycloudflare.com/api/auth/callback",
+  "https://statistics-ultimately-referrals-wrong.trycloudflare.com/auth/callback",
+  "https://statistics-ultimately-referrals-wrong.trycloudflare.com/auth/shopify/callback",
+  "https://statistics-ultimately-referrals-wrong.trycloudflare.com/api/auth/callback",
+  "https://dress-tight-arcade-brave.trycloudflare.com/auth/callback",
+  "https://dress-tight-arcade-brave.trycloudflare.com/auth/shopify/callback",
+  "https://dress-tight-arcade-brave.trycloudflare.com/api/auth/callback",
+  "https://graphic-bruce-further-remove.trycloudflare.com/auth/callback",
+  "https://graphic-bruce-further-remove.trycloudflare.com/auth/shopify/callback",
+  "https://graphic-bruce-further-remove.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
